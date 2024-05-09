@@ -81,7 +81,7 @@ body {
     background-size: cover;
     min-height: 115vh;
     margin-top: -6rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
@@ -102,7 +102,36 @@ body {
     font-size: 1.1rem;
     color: #666;
 }
+.home .couple h3{
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--blue);
+}
 
+.home .couple{
+    margin-top: 35px;
+}
+
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.info h2 {
+    color: var(--blue);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
 /* media query */
 /* laptop */
 @media (max-width: 992px){
