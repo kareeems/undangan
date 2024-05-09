@@ -28,9 +28,9 @@
                 <h1>Mia & Karim</h1>
                 <p>Insya Allah akan melangsungkan pernikahan dalam:</p>
                 <div class="simply-countdown"></div>
-                <a href="#undangan" class="btn bt-lg mt-4">Lihat Undangan</a>
+                <a href="#home" class="btn bt-lg mt-4" onClick="enablescroll()">Lihat Undangan</a>
             </main>
-        </section>
+        </section>  
 
         <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
             <div class="container">
@@ -180,6 +180,26 @@
             },
     });
 
+    </script>
+
+    <script>
+        const rootElement = document.querySelector(":root");
+        function disableScroll(){
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        
+            window.onscroll = function () {
+                window.scrollTo(scrollTop, scrollLeft);
+            }
+            rootElement.style.scrollBehavior = 'auto';
+        }
+
+        function enablescroll() {
+            window.onscroll = function () { }
+            rootElement.style.scrollBehavior = 'smooth';
+        }
+
+        disableScroll();
     </script>
 
 </body>
