@@ -9,7 +9,7 @@
 body {
     font-size: 1.2rem;
     font-family: 'work sans', sans-serif;
-    min-height: 4000px;
+    min-height: 4100px;
 }
 
 .hero::before{
@@ -120,7 +120,8 @@ body {
     padding-bottom: 8rem;
 }
 .info h2,
-.rsvp h2{
+.rsvp h2,
+.gifts h2{
     color: var(--blue);
     font-family: 'Sacramento';
     font-size: 5rem;
@@ -167,6 +168,39 @@ body {
     background-color: white;
     color: var(--blue);
     border: 1px solid white;
+}
+
+.gifts{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* media query */
