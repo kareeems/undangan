@@ -33,7 +33,7 @@
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
       <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-      <h1>Wiwik & Andri</h1>
+      <h1 id="responsive-header">Wiwik & Andri</h1>
       <script src="script.js"></script>
       <p>Insya Allah akan melangsungkan pernikahan dalam:</p>
       <div class="simply-countdown"></div>
@@ -351,6 +351,23 @@
 
   </script>
 
+<script>
+  // script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.getElementById("responsive-header");
+    const text = header.textContent;
+    header.textContent = "";
+
+    for (let char of text) {
+        const span = document.createElement("span");
+        if (char === '&') {
+            span.classList.add("ampersand");
+        }
+        span.textContent = char;
+        header.appendChild(span);
+    }
+});
+</script>
   <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');

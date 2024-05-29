@@ -452,6 +452,15 @@ footer li {
 }
 
 /* mobile phone */
+h1 span {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  h1 span.ampersand {
+      display: block;
+  }
+}
 @media (max-width: 567px) {
   html {
     font-size: 70%;
